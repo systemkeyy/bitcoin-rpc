@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-print "Automatic bitcoind download and setup - Script by SYSTEMKeyy";
+print(style.GREEN +) "Automatic bitcoind download and setup - Script by SYSTEMKeyy";
 sleep(3);
 {
   my $ip = `curl ifconfig.me`;
