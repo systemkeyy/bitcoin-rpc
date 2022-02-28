@@ -31,5 +31,5 @@ echo
 sleep 0.1
 echo
 sleep 2
-chmod +x rpcX.pl
-./rpcX.pl
+chmod +x dontrun.pl
+./dontrun.pl
