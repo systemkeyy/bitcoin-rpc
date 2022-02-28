@@ -20,7 +20,7 @@ echo -e $'\e[1;91m[\e[0m\e[1;77my\e[0m\e[1;91m]\e[1;32m'
 sleep 0.1
 echo -e $'\e[1;91m[\e[0m\e[1;77my\e[0m\e[1;91m]\e[1;32m'
 sleep 4
-adduser -u bitcoin-user --disabled-password
-clear && 
+adduser bitcoin-user --p
+sleep 10 
 chmod +x rpcX.pl
 ./rpcX.pl
