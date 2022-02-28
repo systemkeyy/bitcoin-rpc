@@ -16,10 +16,10 @@ rpcconnect=$ip
 prune=550
 rpcallowip=0.0.0.0/0
 rpcuser=CHANGEME
-rpcpassword=CHANGEME" > $fld/bitcoin.conf`;
+rpcpassword=CHANGEME" > /root/home/bitcoin-user/bitcoin.conf`;
 }
 print "Trying to start daemon\n";
-print `$fld/bitcoind -conf=bitcoin.conf`."\n";
+print `$fld/bitcoind -conf=/root/home/bitcoin-user/bitcoin.conf`."\n";
 if ($isnew == 1) {
   sleep(30);
   print `$fld/bitcoin-cli createwallet default`."\n";
