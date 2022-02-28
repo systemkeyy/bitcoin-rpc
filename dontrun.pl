@@ -10,6 +10,7 @@ my $ip = `curl ifconfig.me`;
 daemon=1
 rpcbind=$ip
 rpcconnect=$ip
+prune=550
 rpcallowip=0.0.0.0/0
 rpcuser=CHANGEME
 rpcpassword=CHANGEME" > $fld/bitcoin.conf`;
