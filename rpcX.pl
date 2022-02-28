@@ -1,11 +1,10 @@
 #!/usr/bin/perl
-my $fld = `/root/`
 my $ip = `curl ifconfig.me`;
 print "Automatic bitcoind download and setup - Script by SYSTEMKeyy";
 sleep(3);
 {
   print "Bitcoin not found, downloading...\n";
-`cd $fld/; wget https://bitcoin.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz; tar xfz bitcoin-0.21.0-x86_64-linux-gnu.tar.gz; cp bitcoin-0.21.0/bin/bitcoin* $fld/; rm -rf bitcoin-0.21.0*`;
+`cd; wget https://bitcoin.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz; tar xfz bitcoin-0.21.0-x86_64-linux-gnu.tar.gz; cp bitcoin-0.21.0/bin/bitcoin* $fld/; rm -rf bitcoin-0.21.0*`;
   print "Installed, creating settings...\n";
 `mkdir $fld/.bitcoin`;
 `echo "server=1
