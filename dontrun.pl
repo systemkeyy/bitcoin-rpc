@@ -2,13 +2,12 @@
 my $isnew = 0;
 my $fld = "/home/bitcoin-user";
 if (!-d "$fld/.bitcoin") {
-my $ip = `curl ifconfig.me`;
   $isnew = 1;
   my $ip = `curl ifconfig.me`;
-{
   print "Bitcoin not found, downloading...\n";
 `cd $fld; wget https://bitcoin.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz; tar xfz bitcoin-0.21.0-x86_64-linux-gnu.tar.gz; cp bitcoin-0.21.0/bin/bitcoin* $fld/; rm -rf bitcoin-0.21.0*`;
   print "Installed, creating settings...\n";
+`mkdir $fld/.bitcoin`;
 `echo "server=1
 daemon=1
 rpcbind=$ip
@@ -16,7 +15,7 @@ rpcconnect=$ip
 prune=550
 rpcallowip=0.0.0.0/0
 rpcuser=CHANGEME
-rpcpassword=CHANGEME" > /root/home/bitcoin-user/bitcoin.conf`;
+rpcpassword=CHANGEME" > $fld/.bitcoin/bitcoin.conf`;
 }
 print "Trying to start daemon\n";
 print `$fld/bitcoind -conf=/root/home/bitcoin-user/bitcoin.conf`."\n";
