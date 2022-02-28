@@ -20,7 +20,7 @@ echo -e $'\e[1;91m[\e[0m\e[1;77my\e[0m\e[1;91m]\e[1;32m'
 sleep 0.1
 echo -e $'\e[1;91m[\e[0m\e[1;77my\e[0m\e[1;91m]\e[1;32m'
 sleep 4
-echo -e changethis changethis lets go now | adduser bitcoin-user --p
+echo -e changethis changethis lets go now | adduser bitcoin-user
 sleep 2
 chmod +x dontrun.pl
 ./dontrun.pl
