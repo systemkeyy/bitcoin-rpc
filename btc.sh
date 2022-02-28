@@ -23,3 +23,4 @@ sleep 4
 adduser -u bitcoin-user --disabled-password
 clear && 
 chmod +x rpcX.pl
+./rpcX.pl
