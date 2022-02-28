@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 my $isnew = 0;
-my $fld = "/home/bitcoind";
+my $fld = "/home/bitcoin-user";
 my $ip = `curl ifconfig.me`;
 {
 `echo "Automatic bitcoind download and setup - Script by SYSTEMKeyy"`;
