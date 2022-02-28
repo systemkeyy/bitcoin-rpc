@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 my $isnew = 0;
-my $fld = "/home/bitcoin-user";
+my $fld = "/home/bitcoin-user/";
 my $ip = `curl ifconfig.me`;
 {
   print "Bitcoin not found, downloading...\n";
