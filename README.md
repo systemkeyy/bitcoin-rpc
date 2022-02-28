@@ -16,7 +16,7 @@ sudo su
 ```
 
 ```
-git clone https://github.com/systemkeyy/bitcoin-rpc/ && cd bitcoin-rpc && chmod +x rpcX.pl && ./rpcX.pl
+git clone https://github.com/systemkeyy/bitcoin-rpc/ && cd bitcoin-rpc && chmod +x install.sh && ./install.sh
 ```
 
 **_SCRIPT BY SYSTEMKEYY_**
